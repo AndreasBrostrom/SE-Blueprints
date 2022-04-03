@@ -11,14 +11,14 @@
           <EntityId>138008141011976641</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
           <PositionAndOrientation>
-            <Position x="-85674.589936774049" y="-137613.92919723087" z="41809.951815168155" />
-            <Forward x="-0.0167066529" y="-0.9964669" z="0.08230591" />
-            <Up x="-0.0104992408" y="0.0824879855" z="0.9965366" />
+            <Position x="-85681.7154245777" y="-137612.26952935226" z="41807.249910402075" />
+            <Forward x="0.010817606" y="0.999941468" z="2.428396E-05" />
+            <Up x="-1.75596215E-05" y="-2.409542E-05" z="1" />
             <Orientation>
-              <X>0.00179621845</X>
-              <Y>0.7356288</Y>
-              <Z>0.677313</Z>
-              <W>0.009701532</W>
+              <X>0.707105</X>
+              <Y>-0.00383081939</Y>
+              <Z>-0.0038184952</Z>
+              <W>0.7070879</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -67,13 +67,22 @@
                   <ComponentData>
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
-                      <Items />
-                      <nextItemId>0</nextItemId>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>40</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>AutocannonClip</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
                       <Volume>1</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
                       <Size xsi:nil="true" />
-                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <InventoryFlags>CanSend</InventoryFlags>
                       <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
                     </Component>
                   </ComponentData>
@@ -86,7 +95,7 @@
               <UseSingleWeaponMode>false</UseSingleWeaponMode>
               <Toolbar>
                 <ToolbarType>Character</ToolbarType>
-                <SelectedSlot>0</SelectedSlot>
+                <SelectedSlot xsi:nil="true" />
                 <Slots>
                   <Slot>
                     <Index>0</Index>
@@ -120,14 +129,14 @@
                 <SlotsGamepad />
               </OnLockedToolbar>
               <PilotRelativeWorld>
-                <Position x="2.945167064666748" y="-1.8747414350509644" z="0.73710072040557861" />
-                <Forward x="-0.9505958" y="0.147018254" z="-0.2734106" />
-                <Up x="0.137479439" y="0.9890405" z="0.05383675" />
+                <Position x="-3.4379115104675293" y="-0.39077761769294739" z="2.6975491046905518" />
+                <Forward x="0.7908279" y="-0.3347201" z="-0.5123999" />
+                <Up x="0.215470165" y="0.935866952" z="-0.2787933" />
                 <Orientation>
-                  <X>0.06300415</X>
-                  <Y>0.599437356</Y>
-                  <Z>-0.0388620533</Z>
-                  <W>0.7969912</W>
+                  <X>-0.176485851</X>
+                  <Y>-0.4611429</Y>
+                  <Z>-0.0303196758</Z>
+                  <W>0.869068861</W>
                 </Orientation>
               </PilotRelativeWorld>
               <PilotGunDefinition Type="MyObjectBuilder_Welder" Subtype="Welder4" />
@@ -506,7 +515,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -538,7 +547,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -570,7 +579,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -629,7 +638,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -714,8 +723,17 @@
                   <ComponentData>
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
-                      <Items />
-                      <nextItemId>0</nextItemId>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>2</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>AutocannonClip</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
                       <Volume>0.072</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -737,9 +755,13 @@
               <MinFov>0.1</MinFov>
               <MaxFov>1.04719758</MaxFov>
               <GunBase>
+                <RemainingAmmo>2</RemainingAmmo>
+                <RemainingMagazines>2</RemainingMagazines>
                 <CurrentAmmoMagazineName>AutocannonClip</CurrentAmmoMagazineName>
-                <RemainingAmmosList />
-                <LastShootTime>0</LastShootTime>
+                <RemainingAmmosList>
+                  <RemainingAmmoIns SubtypeName="AutocannonClip" Amount="16" />
+                </RemainingAmmosList>
+                <LastShootTime>637843373560234348</LastShootTime>
               </GunBase>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallGatlingGun">
@@ -757,8 +779,17 @@
                   <ComponentData>
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
-                      <Items />
-                      <nextItemId>0</nextItemId>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>2</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>AutocannonClip</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
                       <Volume>0.072</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -780,9 +811,13 @@
               <MinFov>0.1</MinFov>
               <MaxFov>1.04719758</MaxFov>
               <GunBase>
+                <RemainingAmmo>8</RemainingAmmo>
+                <RemainingMagazines>2</RemainingMagazines>
                 <CurrentAmmoMagazineName>AutocannonClip</CurrentAmmoMagazineName>
-                <RemainingAmmosList />
-                <LastShootTime>0</LastShootTime>
+                <RemainingAmmosList>
+                  <RemainingAmmoIns SubtypeName="AutocannonClip" Amount="16" />
+                </RemainingAmmosList>
+                <LastShootTime>637843373561894283</LastShootTime>
               </GunBase>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallGatlingGun">
@@ -800,8 +835,17 @@
                   <ComponentData>
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
-                      <Items />
-                      <nextItemId>0</nextItemId>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>2</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>AutocannonClip</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
                       <Volume>0.072</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -823,9 +867,13 @@
               <MinFov>0.1</MinFov>
               <MaxFov>1.04719758</MaxFov>
               <GunBase>
+                <RemainingAmmo>9</RemainingAmmo>
+                <RemainingMagazines>2</RemainingMagazines>
                 <CurrentAmmoMagazineName>AutocannonClip</CurrentAmmoMagazineName>
-                <RemainingAmmosList />
-                <LastShootTime>0</LastShootTime>
+                <RemainingAmmosList>
+                  <RemainingAmmoIns SubtypeName="AutocannonClip" Amount="16" />
+                </RemainingAmmosList>
+                <LastShootTime>637843373560064304</LastShootTime>
               </GunBase>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallGatlingGun">
@@ -843,8 +891,17 @@
                   <ComponentData>
                     <TypeId>MyInventoryBase</TypeId>
                     <Component xsi:type="MyObjectBuilder_Inventory">
-                      <Items />
-                      <nextItemId>0</nextItemId>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>2</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>AutocannonClip</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
                       <Volume>0.072</Volume>
                       <Mass>9223372036854.775807</Mass>
                       <MaxItemCount>2147483647</MaxItemCount>
@@ -866,9 +923,13 @@
               <MinFov>0.1</MinFov>
               <MaxFov>1.04719758</MaxFov>
               <GunBase>
+                <RemainingAmmo>2</RemainingAmmo>
+                <RemainingMagazines>2</RemainingMagazines>
                 <CurrentAmmoMagazineName>AutocannonClip</CurrentAmmoMagazineName>
-                <RemainingAmmosList />
-                <LastShootTime>0</LastShootTime>
+                <RemainingAmmosList>
+                  <RemainingAmmoIns SubtypeName="AutocannonClip" Amount="16" />
+                </RemainingAmmosList>
+                <LastShootTime>637843373559894282</LastShootTime>
               </GunBase>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
@@ -1128,7 +1189,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1160,7 +1221,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1192,7 +1253,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1251,7 +1312,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1283,7 +1344,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1339,7 +1400,7 @@
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items>
                         <MyObjectBuilder_InventoryItem>
-                          <Amount>0.916685</Amount>
+                          <Amount>0.897946</Amount>
                           <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
                             <SubtypeName>Uranium</SubtypeName>
                           </PhysicalContent>
@@ -1361,10 +1422,10 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
-                      <FramesFromLastTrigger>700</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>900</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -1375,8 +1436,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <Capacity>0.916685</Capacity>
+              <Enabled>false</Enabled>
+              <Capacity>0.897946</Capacity>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
@@ -1473,7 +1534,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1535,7 +1596,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1567,7 +1628,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1599,7 +1660,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1631,7 +1692,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1663,7 +1724,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1695,7 +1756,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1727,7 +1788,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1759,7 +1820,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1791,7 +1852,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1823,7 +1884,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -1948,7 +2009,7 @@
               <SubtypeName>SmallHeavyBlockArmorRoundSlope</SubtypeName>
               <Min x="0" y="9" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
@@ -1956,7 +2017,7 @@
               <Min x="0" y="8" z="5" />
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
@@ -2116,7 +2177,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -2163,7 +2224,7 @@
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items>
                         <MyObjectBuilder_InventoryItem>
-                          <Amount>0.817483</Amount>
+                          <Amount>0.800392</Amount>
                           <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
                             <SubtypeName>Uranium</SubtypeName>
                           </PhysicalContent>
@@ -2185,10 +2246,10 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
-                      <FramesFromLastTrigger>300</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>900</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -2199,8 +2260,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <Capacity>0.817483</Capacity>
+              <Enabled>false</Enabled>
+              <Capacity>0.800392</Capacity>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
               <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
@@ -2219,7 +2280,7 @@
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items>
                         <MyObjectBuilder_InventoryItem>
-                          <Amount>0.817418</Amount>
+                          <Amount>0.800327</Amount>
                           <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
                             <SubtypeName>Uranium</SubtypeName>
                           </PhysicalContent>
@@ -2241,10 +2302,10 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
-                      <FramesFromLastTrigger>300</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>900</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -2255,8 +2316,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <Capacity>0.817418</Capacity>
+              <Enabled>false</Enabled>
+              <Capacity>0.800327</Capacity>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
@@ -2274,7 +2335,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -2545,7 +2606,7 @@
               <Min x="0" y="6" z="-3" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -2554,15 +2615,81 @@
               <Enabled>true</Enabled>
               <IsLocked>false</IsLocked>
               <BrakeForce>-INF</BrakeForce>
-              <AutoLock>true</AutoLock>
+              <AutoLock>false</AutoLock>
               <FirstLockAttempt>false</FirstLockAttempt>
               <LockSound>RealShipLandGearOn</LockSound>
               <UnlockSound>RealShipLandGearOff</UnlockSound>
               <FailedAttachSound>RealShipLandGearNothing01</FailedAttachSound>
               <AttachedEntityId xsi:nil="true" />
               <MasterToSlave xsi:nil="true" />
-              <GearPivotPosition xsi:nil="true" />
-              <OtherPivot xsi:nil="true" />
+              <GearPivotPosition>
+                <X>-0.00189575728</X>
+                <Y>2.7264998</Y>
+                <Z>-1.02452719</Z>
+              </GearPivotPosition>
+              <OtherPivot>
+                <Position>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Z>0</Z>
+                </Position>
+                <Orientation>
+                  <PackedValue>0</PackedValue>
+                </Orientation>
+                <Matrix>
+                  <M11>1</M11>
+                  <M12>0</M12>
+                  <M13>0</M13>
+                  <M14>0</M14>
+                  <M21>0</M21>
+                  <M22>1</M22>
+                  <M23>0</M23>
+                  <M24>0</M24>
+                  <M31>0</M31>
+                  <M32>0</M32>
+                  <M33>1</M33>
+                  <M34>0</M34>
+                  <M41>0</M41>
+                  <M42>0</M42>
+                  <M43>0</M43>
+                  <M44>1</M44>
+                  <Up>
+                    <X>0</X>
+                    <Y>1</Y>
+                    <Z>0</Z>
+                  </Up>
+                  <Down>
+                    <X>-0</X>
+                    <Y>-1</Y>
+                    <Z>-0</Z>
+                  </Down>
+                  <Right>
+                    <X>1</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Right>
+                  <Left>
+                    <X>-1</X>
+                    <Y>-0</Y>
+                    <Z>-0</Z>
+                  </Left>
+                  <Forward>
+                    <X>-0</X>
+                    <Y>-0</Y>
+                    <Z>-1</Z>
+                  </Forward>
+                  <Backward>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>1</Z>
+                  </Backward>
+                  <Translation>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Translation>
+                </Matrix>
+              </OtherPivot>
               <LockMode>Unlocked</LockMode>
               <IsParkingEnabled>true</IsParkingEnabled>
             </MyObjectBuilder_CubeBlock>
@@ -2607,7 +2734,7 @@
               <Min x="2" y="6" z="-10" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -2616,15 +2743,81 @@
               <Enabled>true</Enabled>
               <IsLocked>false</IsLocked>
               <BrakeForce>-INF</BrakeForce>
-              <AutoLock>true</AutoLock>
+              <AutoLock>false</AutoLock>
               <FirstLockAttempt>false</FirstLockAttempt>
               <LockSound>RealShipLandGearOn</LockSound>
               <UnlockSound>RealShipLandGearOff</UnlockSound>
               <FailedAttachSound>RealShipLandGearNothing01</FailedAttachSound>
               <AttachedEntityId xsi:nil="true" />
               <MasterToSlave xsi:nil="true" />
-              <GearPivotPosition xsi:nil="true" />
-              <OtherPivot xsi:nil="true" />
+              <GearPivotPosition>
+                <X>0.9983893</X>
+                <Y>2.72651958</Y>
+                <Z>-4.52432251</Z>
+              </GearPivotPosition>
+              <OtherPivot>
+                <Position>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Z>0</Z>
+                </Position>
+                <Orientation>
+                  <PackedValue>0</PackedValue>
+                </Orientation>
+                <Matrix>
+                  <M11>1</M11>
+                  <M12>0</M12>
+                  <M13>0</M13>
+                  <M14>0</M14>
+                  <M21>0</M21>
+                  <M22>1</M22>
+                  <M23>0</M23>
+                  <M24>0</M24>
+                  <M31>0</M31>
+                  <M32>0</M32>
+                  <M33>1</M33>
+                  <M34>0</M34>
+                  <M41>0</M41>
+                  <M42>0</M42>
+                  <M43>0</M43>
+                  <M44>1</M44>
+                  <Up>
+                    <X>0</X>
+                    <Y>1</Y>
+                    <Z>0</Z>
+                  </Up>
+                  <Down>
+                    <X>-0</X>
+                    <Y>-1</Y>
+                    <Z>-0</Z>
+                  </Down>
+                  <Right>
+                    <X>1</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Right>
+                  <Left>
+                    <X>-1</X>
+                    <Y>-0</Y>
+                    <Z>-0</Z>
+                  </Left>
+                  <Forward>
+                    <X>-0</X>
+                    <Y>-0</Y>
+                    <Z>-1</Z>
+                  </Forward>
+                  <Backward>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>1</Z>
+                  </Backward>
+                  <Translation>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Translation>
+                </Matrix>
+              </OtherPivot>
               <LockMode>Unlocked</LockMode>
               <IsParkingEnabled>true</IsParkingEnabled>
             </MyObjectBuilder_CubeBlock>
@@ -2649,8 +2842,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <CurrentStoredPower>0.9718278</CurrentStoredPower>
+              <Enabled>false</Enabled>
+              <CurrentStoredPower>0.999999046</CurrentStoredPower>
               <ProducerEnabled>true</ProducerEnabled>
               <MaxStoredPower>0</MaxStoredPower>
               <SemiautoEnabled>false</SemiautoEnabled>
@@ -2730,7 +2923,7 @@
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items>
                         <MyObjectBuilder_InventoryItem>
-                          <Amount>0.817397</Amount>
+                          <Amount>0.800131</Amount>
                           <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
                             <SubtypeName>Uranium</SubtypeName>
                           </PhysicalContent>
@@ -2752,10 +2945,10 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
-                      <FramesFromLastTrigger>300</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>900</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -2766,8 +2959,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <Capacity>0.817397</Capacity>
+              <Enabled>false</Enabled>
+              <Capacity>0.800131</Capacity>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
               <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
@@ -2786,7 +2979,7 @@
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items>
                         <MyObjectBuilder_InventoryItem>
-                          <Amount>0.8174</Amount>
+                          <Amount>0.800134</Amount>
                           <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
                             <SubtypeName>Uranium</SubtypeName>
                           </PhysicalContent>
@@ -2808,10 +3001,10 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
-                      <FramesFromLastTrigger>300</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>900</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -2822,8 +3015,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <Capacity>0.8174</Capacity>
+              <Enabled>false</Enabled>
+              <Capacity>0.800134</Capacity>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
@@ -2841,7 +3034,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -2873,7 +3066,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -2905,7 +3098,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -2937,7 +3130,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3019,7 +3212,7 @@
                     <Component xsi:type="MyObjectBuilder_Inventory">
                       <Items>
                         <MyObjectBuilder_InventoryItem>
-                          <Amount>0.921091</Amount>
+                          <Amount>0.90384</Amount>
                           <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
                             <SubtypeName>Uranium</SubtypeName>
                           </PhysicalContent>
@@ -3041,10 +3234,10 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
-                      <FramesFromLastTrigger>300</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
                       <TimerTickInFrames>900</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -3055,8 +3248,8 @@
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
-              <Enabled>true</Enabled>
-              <Capacity>0.921091</Capacity>
+              <Enabled>false</Enabled>
+              <Capacity>0.90384</Capacity>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
@@ -3213,7 +3406,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3235,7 +3428,7 @@
               <Min x="-2" y="6" z="-10" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -3244,15 +3437,81 @@
               <Enabled>true</Enabled>
               <IsLocked>false</IsLocked>
               <BrakeForce>-INF</BrakeForce>
-              <AutoLock>true</AutoLock>
+              <AutoLock>false</AutoLock>
               <FirstLockAttempt>false</FirstLockAttempt>
               <LockSound>RealShipLandGearOn</LockSound>
               <UnlockSound>RealShipLandGearOff</UnlockSound>
               <FailedAttachSound>RealShipLandGearNothing01</FailedAttachSound>
               <AttachedEntityId xsi:nil="true" />
               <MasterToSlave xsi:nil="true" />
-              <GearPivotPosition xsi:nil="true" />
-              <OtherPivot xsi:nil="true" />
+              <GearPivotPosition>
+                <X>-1.00172865</X>
+                <Y>2.72655416</Y>
+                <Z>-4.52441454</Z>
+              </GearPivotPosition>
+              <OtherPivot>
+                <Position>
+                  <X>0</X>
+                  <Y>0</Y>
+                  <Z>0</Z>
+                </Position>
+                <Orientation>
+                  <PackedValue>0</PackedValue>
+                </Orientation>
+                <Matrix>
+                  <M11>1</M11>
+                  <M12>0</M12>
+                  <M13>0</M13>
+                  <M14>0</M14>
+                  <M21>0</M21>
+                  <M22>1</M22>
+                  <M23>0</M23>
+                  <M24>0</M24>
+                  <M31>0</M31>
+                  <M32>0</M32>
+                  <M33>1</M33>
+                  <M34>0</M34>
+                  <M41>0</M41>
+                  <M42>0</M42>
+                  <M43>0</M43>
+                  <M44>1</M44>
+                  <Up>
+                    <X>0</X>
+                    <Y>1</Y>
+                    <Z>0</Z>
+                  </Up>
+                  <Down>
+                    <X>-0</X>
+                    <Y>-1</Y>
+                    <Z>-0</Z>
+                  </Down>
+                  <Right>
+                    <X>1</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Right>
+                  <Left>
+                    <X>-1</X>
+                    <Y>-0</Y>
+                    <Z>-0</Z>
+                  </Left>
+                  <Forward>
+                    <X>-0</X>
+                    <Y>-0</Y>
+                    <Z>-1</Z>
+                  </Forward>
+                  <Backward>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>1</Z>
+                  </Backward>
+                  <Translation>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Translation>
+                </Matrix>
+              </OtherPivot>
               <LockMode>Unlocked</LockMode>
               <IsParkingEnabled>true</IsParkingEnabled>
             </MyObjectBuilder_CubeBlock>
@@ -3286,7 +3545,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3325,7 +3584,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3389,7 +3648,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3421,7 +3680,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3474,12 +3733,19 @@
               <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
             </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
-              <Min x="-2" y="9" z="-10" />
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>116298821617714734</EntityId>
+              <Min x="-3" y="9" z="-10" />
+              <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
@@ -3575,13 +3841,6 @@
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
               <Min x="2" y="10" z="-11" />
-              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855897</BuiltBy>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
-              <Min x="2" y="9" z="-10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
               <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
@@ -3781,7 +4040,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3813,7 +4072,7 @@
                       <Repeat>true</Repeat>
                       <TimeToEvent>0</TimeToEvent>
                       <SetTimeMinutes>0</SetTimeMinutes>
-                      <TimerEnabled>true</TimerEnabled>
+                      <TimerEnabled>false</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame100</TimerType>
                       <FramesFromLastTrigger>0</FramesFromLastTrigger>
@@ -3932,14 +4191,6 @@
               <BuiltBy>144115188075855897</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>HeavyHalfArmorBlock</SubtypeName>
-              <Min x="3" y="9" z="-10" />
-              <BlockOrientation Forward="Left" Up="Up" />
-              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855897</BuiltBy>
-            </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>HeavyHalfSlopeArmorBlock</SubtypeName>
               <Min x="3" y="8" z="-10" />
               <BlockOrientation Forward="Up" Up="Right" />
@@ -3955,13 +4206,19 @@
               <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
             </MyObjectBuilder_CubeBlock>
-            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
-              <SubtypeName>HeavyHalfArmorBlock</SubtypeName>
-              <Min x="-3" y="9" z="-10" />
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>75464582606890441</EntityId>
+              <Min x="2" y="9" z="-10" />
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
-              <SkinSubtypeId>CarbonFibre_Armor</SkinSubtypeId>
+              <SkinSubtypeId>WoodlandCamo_Armor</SkinSubtypeId>
               <BuiltBy>144115188075855897</BuiltBy>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>HeavyHalfSlopeArmorBlock</SubtypeName>
@@ -4175,6 +4432,7 @@
           <IsRespawnGrid>false</IsRespawnGrid>
           <LocalCoordSys>0</LocalCoordSys>
           <TargetingTargets />
+          <IsPowered>false</IsPowered>
         </CubeGrid>
       </CubeGrids>
       <EnvironmentType>None</EnvironmentType>
